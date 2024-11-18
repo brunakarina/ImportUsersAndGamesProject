@@ -1,0 +1,5 @@
+<%= form_with url: "/upload", method: :post, local: true do |form| %>
+  <%= form.label :file, "Escolha um arquivo" %>
+  <%= form.file_field :file %>
+  <%= form.submit "Enviar" %>
+<% end %>
